@@ -5,211 +5,165 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Skills - AnkitaMeshram</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+	<title>Skills - AnkitaMeshram</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+		.tab-buttons {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			margin-bottom: 20px;
+		}
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		.tablink {
+			background-color: #73a4a9;
+			color: white;
+			border: none;
+			/*padding: 10px 20px;*/
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+			/*border-radius: 5px;*/
+			font-size: 1em;
+		}
 
-				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style2">
-						<a href="index.html" class="logo"><strong>Ankita Meshram</strong> <span> Data Engineer</span></a>
-						<ul class="icons">
-							
-							<li><a href="https://github.com/ankitarm" target= "_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/ankitam-/" target= "_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						</ul>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+		.tablink:hover,
+		.tablink.active {
+			background-color: #d1a673;
+		}
 
-				<!-- Menu -->
-				<nav id="menu">
-					<ul class="links">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="landing.html">Professional experience</a></li>
-						<li><a href="skilllanding.html">Technical Skills</a></li>
-						<li><a href="prolanding.html">Projects</a></li>
-						<li><a href="edulanding.html">Education</a></li>
-						
-					</ul>
-					<ul class="actions stacked">
-						<li><a href="index.html" class="button primary fit">Back</a></li>
-						<!--<li><a href="#" class="button fit">Log In</a></li> -->
-					</ul>
-				</nav>
+		.tabcontent {
+			display: none;
+			padding: 20px;
+			/*border-top: 2px solid #eee;*/
+			animation: fadeEffect 0.5s;
+		}
 
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section id="banner" class="style2">
-						<div class="inner">
-							<span class="image">
-								<img src="images/pic07.jpg" alt="" />
-							</span>
-							<header class="major">
-								<h1>Technical Skills </h1>
-							</header>
-							<div class="content">
-								<h3>  PYTHON   |   SPARK   |   SQL   |   AWS   |   AZURE  </h3> 
-							</div>
-						</div>
-					</section>
+		@keyframes fadeEffect {
+			from {opacity: 0;}
+			to {opacity: 1;}
+		}
+	</style>
 
-				<!-- Main -->
-					<div id="main">
 
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h2>SKILLS</h2>
-									</header>
-									<p>Programming Language  &nbsp;&nbsp; : Python, Scala, SQL. <br>
-									   Big Data Technologies    &nbsp;&nbsp; &nbsp;&nbsp;    
-										: Apache Spark, Hadoop, HDFS, YARN, Map Reduce, Hive, Spark SQL <br>
-										Data Engineering & Tools &nbsp;: ETL/ELT Data Pipelines, Data Modeling, Glue, Athena, Redshift, Airflow. <br>
-										Database Technologies &nbsp; &nbsp;&nbsp;    
-										: MYSQL, PostgreSQL, NoSQL, SQL Server. <br>
-										Cloud Technologies &nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp; &nbsp;&nbsp;   
-										:  AZURE(ADF,  Blob Storage), AWS (EC2, S3, RDS, Lambda).       <br>          </p>
-								</div>
-							</section>
+</head>
+<body class="is-preload">
 
-						<!-- Two -->
-							<section id="two" class="spotlights">
-								<section>
-									<a  class="image">
-										<img src="images/pic11.jpg" alt="" data-position="center center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Python</h3>
-											</header>
-											<p>Python is widely utilized in data engineering for its versatility and extensive ecosystem of libraries. I leverage Python for various tasks, including data ingestion, transformation, and processing at scale. With libraries like Pandas, NumPy, and PySpark, Python facilitates efficient manipulation and analysis of large datasets, while frameworks such as Airflow enable the orchestration of complex data workflows. Additionally, Python's integration with popular cloud platforms like AWS, Azure, and Google Cloud further enhances its utility in building scalable and robust data pipelines, making it a cornerstone of modern data engineering practices.</p>
-											
-										</div>
-									</div>
-								</section>
-								<section>
-									<a class="image">
-										<img src="images/a.png" alt="" data-position="top center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Spark</h3>
-											</header>
-											<p>Apache Spark is pivotal in data engineering due to its high-performance, distributed computing capabilities. Spark's in-memory processing engine accelerates data tasks, ideal for handling large-scale datasets efficiently. It provides a unified framework for various processing tasks, including batch processing, stream processing, machine learning, and graph processing, simplifying complex pipelines. Spark's resilient distributed dataset (RDD) abstraction enables fault-tolerant and scalable processing, while its DataFrame API offers an intuitive way to manipulate structured data. Moreover, Spark's compatibility with multiple languages like Python, Scala, Java, and SQL enhances its flexibility, making it fundamental in modern data engineering ecosystems.</p>
-										</div>
-									</div>
-								</section>
-								<section>
-									<a class="image">
-										<img src="images/pic10.png" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>SQL</h3>
-											</header>
-											<p>SQL (Structured Query Language) is fundamental in data engineering for managing, querying, and manipulating structured data within databases and data warehouses. Data engineers utilize SQL for tasks such as data ingestion, transformation, aggregation, and analysis. Its declarative nature allows engineers to express complex data operations concisely, making it well-suited for tasks ranging from simple data retrieval to complex analytics queries. Furthermore, SQL integrates seamlessly with various data processing frameworks and tools, enabling efficient and scalable data workflows across different stages of the data lifecycle.</p>
-										</div>
-									</div>
-								</section>
-								<section>
-									<a  class="image">
-										<img src="images/micro.jpg" alt="" data-position="center center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Azure</h3>
-											</header>
-											<p>Azure plays a crucial role in data engineering, providing a comprehensive suite of services and tools for data ingestion, storage, processing, and analytics in the cloud. With offerings such as Azure Data Lake Storage, Azure SQL Database, Azure Synapse Analytics, and Azure Databricks, data engineers can seamlessly build scalable and reliable data pipelines, perform advanced analytics, and derive valuable insights from their data. Azure's integration with popular data engineering frameworks like Apache Spark and support for various programming languages make it a preferred choice for organizations seeking to leverage the power of cloud computing in their data engineering workflows.</p>
-										</div>
-									</div>
-								</section>
-								<section>
-									<a class="image">
-										<img src="images/aws.jpg" alt="" data-position="center center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>AWS</h3>
-											</header>
-											<p>AWS is pivotal in data engineering, providing a comprehensive array of services and tools tailored for various stages of the data lifecycle. With offerings like Amazon S3 for scalable storage, Amazon Redshift for data warehousing, and Amazon EMR for distributed data processing, data engineers can seamlessly build robust and scalable data pipelines in the cloud. AWS's integration with popular data engineering frameworks like Apache Spark and support for multiple programming languages make it an ideal choice for organizations aiming to leverage cloud computing for their data engineering needs.</p>
-										</div>
-									</div>
-								</section>
-							</section>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-						<!-- Three -->
-						<section id="three">
-							<div class="inner">
-								<header class="major">
-									<!--<h2>Massa libero</h2>-->
-								</header>
-								<!--<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>-->
-								<ul class="actions">
-									<li><a href="#" onclick="window.history.back(); return false;" class="button next">Back</a></li>
-								</ul>
-							</div>
-						</section>
+		<!-- Header -->
+		<!-- Note: The "styleN" class below should match that of the banner element. -->
+		<header id="header" class="alt style2">
+			<a href="index.html" class="logo"><strong>Ankita Meshram</strong> <span> Data Engineer</span></a>
+			<ul class="icons">
 
-					</div>
+				<li><a href="https://github.com/ankitarm" target= "_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="https://www.linkedin.com/in/ankitam-/" target= "_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+			</ul>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
 
-			<!-- Contact -->
-			<section id="contact">
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="landing.html">Professional experience</a></li>
+				<li><a href="skilllanding.html">Technical Skills</a></li>
+				<li><a href="prolanding.html">Projects</a></li>
+				<li><a href="edulanding.html">Education</a></li>
+
+			</ul>
+			<ul class="actions stacked">
+				<li><a href="index.html" class="button primary fit">Back</a></li>
+				<!--<li><a href="#" class="button fit">Log In</a></li> -->
+			</ul>
+		</nav>
+
+		<!-- Banner -->
+		<!-- Note: The "styleN" class below should match that of the header element. -->
+		<section id="banner" class="style2">
+			<div class="inner" >
+				<span class="image">
+					<img src="images/pic07.jpg" alt="" />
+				</span>
+				<header class="major">
+					<h1>Technical Skills </h1>
+				</header>
+				<!-- Tab buttons -->
+				 <div class="tab-buttons" align="center">
+                    <button class="tablink active" onclick="loadSkill(event, 'Python')">Python</button>
+                    <button class="tablink" onclick="loadSkill(event, 'Spark')">Spark</button>
+                    <button class="tablink" onclick="loadSkill(event, 'SQL')">SQL</button>
+                    <button class="tablink" onclick="loadSkill(event, 'Kafka')">Kafka</button>
+                    <button class="tablink" onclick="loadSkill(event, 'AWS')">AWS</button>
+                </div>
+			</div>
+		</section>
+
+		<!-- Main -->
+		<div id="main">
+			<section id="two" class="tabs">
 				<div class="inner">
-					<section>
-						<form id="emailForm" method="post">
-							<div class="fields">
-								<div class="field half">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
-								</div>
-								<div class="field half">
-									<label for="email">Email</label>
-									<input type="text" name="email" id="email" />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="6"></textarea>
-								</div>
-							</div>
-							<ul class="actions">
-								<li><input type="button" value="Send Message" class="primary" onclick="sendEmail()" /></li>
-								<li><input type="reset" value="Clear" /></li>
-							</ul>
-						</form>
-					</section>
+					<!-- Tab content -->
+                    <div id="skillContent"></div>
 					
-					<script>
-						function sendEmail() {
-							// Get form data
-							var name = document.getElementById("name").value;
-							var email = document.getElementById("email").value;
-							var message = document.getElementById("message").value;
-					
-							// Construct mailto link
-							var mailtoLink = "mailto:ankitameshram53@gmail.com?subject=Message from " + name + " (" + email + ")&body=" + encodeURIComponent(message);
-					
-							// Set window location to mailto link
-							window.location.href = mailtoLink;
-						}
-					</script>
-					
-					<section class="split">
+				</div>
+			</section>
+
+
+			<!-- Three -->
+			<section id="three">
+				<div class="inner">
+					<header class="major">
+						<!--<h2>Massa libero</h2>-->
+					</header>
+					<!--<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>-->
+					<ul class="actions">
+						<li><a href="#" onclick="window.history.back(); return false;" class="button next">Back</a></li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+<!-- Contact -->
+<section id="contact">
+	<div class="inner">
+		<section>
+			<form action="https://formsubmit.co/p@gmail.com" method="POST">
+				<div class="fields">
+					<div class="field half">
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" required />
+					</div>
+					<div class="field half">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" required />
+					</div>
+					<div class="field">
+						<label for="message">Message</label>
+						<textarea name="message" id="message" rows="6" required></textarea>
+					</div>
+				</div>
+				<ul class="actions">
+					<li><input type="submit" value="Send Message" class="primary" /></li>
+					<li><input type="reset" value="Clear" /></li>
+				</ul>
+				<!-- Optional: Prevent spam -->
+				<input type="hidden" name="_captcha" value="false">
+				<!-- Optional: Redirect after submission -->
+				<input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+			</form>
+
+
+		</section>
+		<section class="split">
 						<section>
 							<div class="contact-method">
 								<span class="icon solid alt fa-envelope"></span>
@@ -235,8 +189,7 @@
 							</div>
 						</section>
 					</section>
-				</div>
-			</section>
+
 
 			<!-- Footer
 				<footer id="footer">
@@ -256,16 +209,52 @@
 			-->
 
 
-			</div>
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+            function loadSkill(event, skillName) {
+                // Remove 'active' class from all buttons
+                var buttons = document.getElementsByClassName('tablink');
+                for (var i = 0; i < buttons.length; i++) {
+                    buttons[i].classList.remove('active');
+                }
+
+                // Add 'active' class to the clicked button
+                event.currentTarget.classList.add('active');
+
+                // Load skill content dynamically using Fetch API
+                fetch('skills/' + skillName.toLowerCase() + '.html')
+                    .then(response => {
+                        if (!response.ok) throw new Error('Skill content not found');
+                        return response.text();
+                    })
+                    .then(data => {
+                        document.getElementById('skillContent').innerHTML = data;
+                    })
+                    .catch(error => {
+                        document.getElementById('skillContent').innerHTML = '<p>Failed to load content.</p>';
+                        console.error(error);
+                    });
+            }
+
+            // Load Python by default when page loads
+            window.onload = function () {
+                // Simulate button click for default active button
+                document.querySelector('.tablink.active').click();
+            };
+        </script>
+
+
+
 
 	</body>
-</html>
+	</html>

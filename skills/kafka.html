@@ -1,0 +1,169 @@
+
+
+<!-- Main -->
+
+<!-- One -->
+<section id="one">
+    <div class="inner">
+        <header class="major">
+            <h1>Kafka in Data Engineering</h2>
+            </header>
+            <!--
+            <div class="content">
+                <p style="font-size: 30px; ">S3&nbsp;&nbsp;&nbsp;&nbsp;|
+                    &nbsp;&nbsp;&nbsp;&nbsp;GLUE&nbsp;&nbsp;&nbsp;&nbsp;|
+                    &nbsp;&nbsp;&nbsp;&nbsp;LAMBDA&nbsp;&nbsp;&nbsp;&nbsp;|
+                    &nbsp;&nbsp;&nbsp;&nbsp;EMR&nbsp;&nbsp;&nbsp;&nbsp;|
+                    &nbsp;&nbsp;&nbsp;&nbsp;REDSHIFT&nbsp;&nbsp;&nbsp;&nbsp;|
+                    &nbsp;&nbsp;&nbsp;&nbsp;ATHENA&nbsp;&nbsp;|
+                &nbsp;&nbsp;&nbsp;&nbsp;CLOUDWATCH</p> 
+            </div>
+        -->
+    </div>
+</section>
+
+<!-- Two -->
+<section id="two" class="spotlights">
+  <section>
+  </a>
+  <div class="content">
+    <div class="inner">
+       
+      <h1>Apache Kafka: The Foundation of Real-Time Data Streaming</h1>
+    <p>Kafka powers some of the world's largest data pipelines and real-time streaming applications. However, for many, getting started can feel overwhelming. Let's break it down into straightforward, bite-sized concepts.</p>
+
+    <h2>1. What is Kafka?</h2>
+    <p>Think of Kafka as a distributed event store and real-time streaming platform. Originally developed at LinkedIn, it has become a critical component in data-heavy applications.</p>
+
+    <p>Kafka operates with three main components:</p>
+    <ul>
+        <li><strong>Producers:</strong> The data sources that send messages to Kafka.</li>
+        <li><strong>Brokers:</strong> Kafka servers that store and manage messages.</li>
+        <li><strong>Consumer Groups:</strong> Applications that process the data based on specific needs.</li>
+    </ul>
+
+    <h2>2. Understanding Kafka Messages</h2>
+    <p>Every piece of data Kafka processes is a message consisting of three parts:</p>
+    <ul>
+        <li><strong>Headers:</strong> Contain metadata about the message.</li>
+        <li><strong>Key:</strong> Helps with partitioning and data organization.</li>
+        <li><strong>Value:</strong> The actual data payload.</li>
+    </ul>
+    <p>This structured approach ensures efficient handling of large-scale data streams.</p>
+
+    <h2>3. How Kafka Organizes Messages: Topics & Partitions</h2>
+    <p>Kafka messages are not randomly stored; they are structured into topics—categories that help organize data streams. Within each topic, Kafka further divides messages into partitions.</p>
+
+    <p><strong>Why are partitions important?</strong></p>
+    <ul>
+        <li><strong>Parallel Processing:</strong> Enables multiple consumers to read and process messages simultaneously.</li>
+        <li><strong>Scalability:</strong> Distributes messages across brokers for better load balancing.</li>
+        <li><strong>Ordering Guarantees:</strong> Messages within the same partition remain in order.</li>
+    </ul>
+
+    <h2>4. Why Do Companies Choose Kafka?</h2>
+    <p>Kafka’s architecture makes it a preferred choice for high-throughput and scalable data streaming. Key advantages include:</p>
+    <ul>
+        <li><strong>Handling Multiple Producers & Consumers:</strong> Kafka efficiently manages multiple producers sending data simultaneously and allows different consumer groups to read from the same topic independently.</li>
+        <li><strong>Consumer Offsets for Fault Tolerance:</strong> Kafka tracks what has been consumed using offsets, ensuring that consumers can resume processing from where they left off in case of failure.</li>
+        <li><strong>Retention Policies for Data Persistence:</strong> Messages can be stored for a predefined time or size limit, ensuring flexibility in data availability.</li>
+        <li><strong>Scalability:</strong> Kafka can start small and expand as data needs grow.</li>
+    </ul>
+
+    <h2>5. Producers: How Data Gets into Kafka</h2>
+    <p>Producers are applications that send messages to Kafka. They optimize data transmission by:</p>
+    <ul>
+        <li>Batching messages to reduce network overhead.</li>
+        <li>Using partitioners to determine the appropriate partition for each message.</li>
+    </ul>
+    <p>If a key is provided, messages with the same key always go to the same partition. If no key is provided, messages are randomly distributed across partitions.</p>
+
+    <h2>6. Consumers & Consumer Groups: Processing Kafka Messages</h2>
+    <p>Consumers read messages from Kafka topics. Consumer groups allow multiple consumers to work together by dividing partitions among them:</p>
+    <ul>
+        <li>Each partition is assigned to only one consumer within a group at a time.</li>
+        <li>If a consumer fails, another consumer automatically takes over its workload.</li>
+    </ul>
+    <p>Kafka's Group Coordinator ensures fair distribution of partitions and triggers a rebalance when consumers join or leave.</p>
+
+    <h2>7. Kafka Cluster: The Role of Brokers & Replication</h2>
+    <p>Kafka operates as a cluster consisting of multiple brokers (servers that store data).</p>
+    <p>To ensure fault tolerance and reliability, Kafka uses a leader-follower replication model:</p>
+    <ul>
+        <li>Each partition has one leader broker responsible for writes and reads.</li>
+        <li>Follower brokers replicate the leader’s data for redundancy.</li>
+        <li>If a broker fails, a follower is promoted to the new leader, preventing data loss.</li>
+    </ul>
+
+    <h3>Transition from ZooKeeper to KRaft</h3>
+    <p>Older Kafka versions relied on ZooKeeper for broker metadata and leader election.</p>
+    <p>Newer versions are moving towards KRaft (Kafka Raft), an internal consensus mechanism that eliminates the need for ZooKeeper and enhances scalability.</p>
+
+    <h2>8. Real-World Use Cases of Kafka</h2>
+    <ul>
+        <li><strong>Log Aggregation:</strong> Collecting logs from thousands of servers.</li>
+        <li><strong>Real-Time Event Streaming:</strong> Processing data from IoT devices, applications, and websites.</li>
+        <li><strong>Change Data Capture (CDC):</strong> Keeping databases synchronized across multiple systems.</li>
+        <li><strong>System Monitoring:</strong> Collecting metrics for dashboards and alerts.</li>
+        <li><strong>Industry Adoption:</strong> Used in finance, healthcare, retail, IoT, and beyond.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>Kafka is a highly scalable, fault-tolerant, and efficient data streaming platform. By leveraging topics, partitions, offsets, replication, and modern scalability techniques, it ensures real-time data movement with minimal latency. As the industry standard for event-driven architectures, Kafka continues to power mission-critical applications worldwide.</p>
+
+
+  </div>
+</div>
+</section>
+<!--
+<section>
+ <div class="content">
+    <div class="inner">
+       <header class="major">
+          <h3>2. Data Transformation and Cleansing</h3>
+      </header>
+      <p>Performed complex data transformations using Pandas and PySpark to ensure data quality, consistency and readiness for analytics.<br>
+
+      Wrote Python scripts to clean data by handling null values, removing duplicates, correcting data types and standardizing formats.</p>
+  </div>
+</div>
+</section>
+<section>
+ <div class="content">
+    <div class="inner">
+       <header class="major">
+          <h3>3. Data Validation & Quality Checks</h3>
+      </header>
+      <p>Wrote Python scripts for data validation, anomaly detection and schema enforcement.<br>
+
+      Automated row count verification, schema matching and threshold-based anomaly detection using custom Python logic.</p>
+  </div>
+</div>
+</section>
+
+<section>
+ <div class="content">
+    <div class="inner">
+       <header class="major">
+          <h3>4. Workflow Orchestration</h3>
+      </header>
+      <p>Designed and managed DAGs in Apache Airflow using Python to automate complex workflows and data dependencies.<br>
+
+      Built custom Airflow operators and sensors in Python to handle specialized processing logic.</p>
+  </div>
+</div>
+</section>
+
+<section>
+ <div class="content">
+    <div class="inner">
+       <header class="major">
+          <h3>5. Cloud Integration</h3>
+      </header>
+      <p>Used Python with AWS SDK (Boto3) to automate cloud resource management like triggering AWS Glue jobs, uploading files to S3 and querying Athena.</p>
+  </div>
+</div>
+</section>
+-->
+</section>
+

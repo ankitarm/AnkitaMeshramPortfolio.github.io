@@ -1,0 +1,117 @@
+<!-- Main -->
+
+<!-- One -->
+<section id="one">
+    <div class="inner">
+        <header class="major">
+            <h1>SQL in Data Engineering</h2>
+            </header>
+            <!--
+            <div class="content">
+                <p style="font-size: 30px; ">S3&nbsp;&nbsp;&nbsp;&nbsp;|
+                    &nbsp;&nbsp;&nbsp;&nbsp;GLUE&nbsp;&nbsp;&nbsp;&nbsp;|
+                    &nbsp;&nbsp;&nbsp;&nbsp;LAMBDA&nbsp;&nbsp;&nbsp;&nbsp;|
+                    &nbsp;&nbsp;&nbsp;&nbsp;EMR&nbsp;&nbsp;&nbsp;&nbsp;|
+                    &nbsp;&nbsp;&nbsp;&nbsp;REDSHIFT&nbsp;&nbsp;&nbsp;&nbsp;|
+                    &nbsp;&nbsp;&nbsp;&nbsp;ATHENA&nbsp;&nbsp;|
+                &nbsp;&nbsp;&nbsp;&nbsp;CLOUDWATCH</p> 
+            </div>
+        -->
+    </div>
+</section>
+
+<!-- Two -->
+<section id="two" class="spotlights">
+  <section>
+  </a>
+  <div class="content">
+    <div class="inner">
+       <header class="major">
+          <h3>How I Improve SQL Performance?</h3>
+      </header>
+      <p>
+        <b>1. Query Optimization:</b>
+I analyze query execution plans using EXPLAIN / EXPLAIN ANALYZE to identify bottlenecks.
+
+I tune queries by reducing data shuffling, limiting joins to necessary columns, and filtering data early.<br>
+
+<b>2. Indexing and Keys:</b>
+I apply appropriate primary, secondary, and composite indexes to speed up reads.
+
+In Redshift or Snowflake, I optimize distribution and sort keys to minimize data movement.<br>
+
+<b>3. Partitioning:</b>
+I use table partitioning to divide large tables by date, region, or logical buckets to reduce scan time.
+
+For queries, I use partition pruning to target specific partitions.<br>
+
+<b>4. Efficient Data Types and File Formats:</b>
+I minimize storage and improve scan speeds by using compact data types and columnar formats like Parquet or ORC.<br>
+
+<b>5. Caching and Materialized Views:</b>
+I create materialized views for frequently accessed aggregations to reduce query computation time.
+
+Where supported, I leverage result caching to improve repeated query performance.
+
+</p>
+
+  </div>
+</div>
+</section>
+<section>
+ <div class="content">
+    <div class="inner">
+       <header class="major">
+          <h3>2. Window Functions</h3>
+      </header>
+      <p>Percentiles, moving averages, cumulative sums using SUM() OVER(), AVG() OVER().</p>
+  </div>
+</div>
+</section>
+<section>
+ <div class="content">
+    <div class="inner">
+       <header class="major">
+          <h3>3. Incremental Loads / CDC</h3>
+      </header>
+      <p>Using watermarks, timestamps, and MERGE operations for processing only new or changed data.</p>
+  </div>
+</div>
+</section>
+
+<section>
+ <div class="content">
+    <div class="inner">
+       <header class="major">
+          <h3>4. Advanced Joins</h3>
+      </header>
+      <p>Using anti-joins (LEFT JOIN WHERE table2.id IS NULL) for exclusion logic.
+
+Self-joins for hierarchical comparisons.</p>
+  </div>
+</div>
+</section>
+
+<section>
+ <div class="content">
+    <div class="inner">
+       <header class="major">
+          <h3>5. Recursive Queries</h3>
+      </header>
+      <p>For processing hierarchical data structures like org charts, product categories.</p>
+  </div>
+</div>
+</section>
+<section>
+ <div class="content">
+    <div class="inner">
+       <header class="major">
+          <h3>6. Data Quality Checks</h3>
+      </header>
+      <p>Null checks, duplicate detection, constraint validations using SQL queries.</p>
+  </div>
+</div>
+</section>
+
+</section>
+
